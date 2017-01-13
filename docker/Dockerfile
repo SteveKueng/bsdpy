@@ -9,6 +9,7 @@ MAINTAINER Pepijn Bruienne "bruienne@umich.edu"
 ENV DEBIAN_FRONTEND noninteractive
 ENV DOCKER_BSDPY_IFACE eth0
 ENV DOCKER_BSDPY_PROTO http
+ENV TFTP_BLOCKSIZE 512
 
 RUN echo "deb http://archive.ubuntu.com/ubuntu precise main universe" > /etc/apt/sources.list
 RUN apt-get update -qq
